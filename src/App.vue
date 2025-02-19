@@ -1,10 +1,10 @@
 <template>
   <div id="app">
-    <van-tabbar v-model="active" route>
+    <router-view/>
+    <van-tabbar placeholder v-model="active" route>
       <van-tabbar-item icon="balance-o" replace to="/">光伏造价</van-tabbar-item>
       <van-tabbar-item icon="comment" replace to="/test">说明</van-tabbar-item>
     </van-tabbar>
-    <router-view/>
   </div>
 </template>
 

@@ -138,12 +138,14 @@
                 </van-cell>
             </van-cell-group>
             <van-button type="primary" block round @click="calculatePrice">计算造价</van-button>
+
             <div v-if="totalPrice" class="result">
                 <!-- <van-cell title="参考造价" :value="`¥${totalPrice.toFixed(2)}万元`" /> -->
                 <van-submit-bar disabled :price="totalPrice" suffix-label="万元" button-color="white"
                     class="custom-submit-bar">
                 </van-submit-bar>
             </div>
+            
         </div>
     </div>
 </template>
