@@ -1,12 +1,12 @@
 <template>
     <div class="price-calculator">
-        <div class="container" style="margin-top: -20px;">
+        <div class="container" style="margin-top: -30px;">
             <van-cell-group inset title="参考标准" style="margin-bottom: 3px;">
                 <van-field v-model="roofArea" label="屋顶面积（平方米）" label-width="12em" input-align="right"
-                    style="padding: 3px;" readonly />
-                <van-field v-model="height" label="屋顶高度（米）" label-width="12em" input-align="right" style="padding: 3px;"
+                    style="padding: 2px;" readonly />
+                <van-field v-model="height" label="屋顶高度（米）" label-width="12em" input-align="right" style="padding: 2px;"
                     readonly />
-                <van-field v-model="installCapacityN" label="装机规模（kWp）" label-width="12em" style="padding: 3px;"
+                <van-field v-model="installCapacityN" label="装机规模（kWp）" label-width="12em" style="padding: 2px;"
                     input-align="right" readonly />
             </van-cell-group>
             <span style="text-align: center;color: #969799;font-size: 13.8px;">基本配置 单瓦造价(元/W)</span>
