@@ -202,7 +202,7 @@ export default {
     data() {
         return {
             roofArea: '10000', // 屋顶面积
-            height: '家用汽车车位', // 屋顶高度
+            height: '小型汽车车位', // 屋顶高度
             installCapacity: 13000, // 装机规模
             installCapacityN: 1300,
             baseP: 2.82730267,
