@@ -96,7 +96,6 @@
                         </van-radio>
                     </van-radio-group>
                 </van-cell>
-
                 <!-- <van-switch-cell v-model="roofRenewal" title="屋面换新" style="text-align: left;font-size: 16px;" />
                 <van-switch-cell v-model="roofStrengthening" title="加固费用" style="text-align: left;font-size: 16px;" />
                 <van-switch-cell v-model="waterproofing" title="防水费用" style="text-align: left;font-size: 16px;" /> -->
@@ -131,18 +130,21 @@
                             @change="totalPrice = null" />
                     </template>
                     <template #title>
-                        <span style="margin-left: -7em;" class="custom-title">防水费用 </span>
+                        <span style="margin-left: -2em;" class="custom-title">防水费用 </span>
                         <van-tag mark type="primary" @click="showPriceToast(waterproofingM)">{{
                             waterproofingP.toFixed(4) }}</van-tag>
+                        <span style="color: gray;"> (取10年计)</span>
                     </template>
                 </van-cell>
             </van-cell-group>
-            <van-button type="primary" block round @click="calculatePrice">计算造价</van-button>
+            <van-button type="primary" block round @click="calculatePrice">参考造价</van-button>
 
             <div v-if="totalPrice" class="result">
                 <!-- <van-cell title="参考造价" :value="`¥${totalPrice.toFixed(2)}万元`" /> -->
-                <van-submit-bar disabled :price="totalPrice" suffix-label="万元" button-color="white"
+                <van-submit-bar disabled :price="totalPrice" suffix-label="万元" 
                     class="custom-submit-bar">
+                    <span style="font-size: 12px;margin-left: 100px;color: gray;">综合单价</span>
+                    <van-tag type="success" round>{{ (totalPrice/installCapacity).toFixed(4) }}</van-tag>
                 </van-submit-bar>
             </div>
             

@@ -2,7 +2,7 @@
   <div class="about-page">
     <div class="content" style="text-align: left;">
       <van-cell-group>
-        <van-cell title="应用名称" value="光伏电站参考造价计算器" />
+        <van-cell title="应用名称" value="光伏电站参考造价" />
         <van-cell title="版本" value="1.0.0" />
         <van-cell title="联系我" value="alkeysheng@gmail.com" />
         <van-cell title="版权所有" value="© 2025" />

@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <!-- <van-nav-bar title="光伏电站参考造价计算器" /> -->
+    <!-- <van-nav-bar title="光伏电站参考造价" /> -->
     <van-tabs v-model="activeTab">
       <van-tab title="彩钢瓦"></van-tab>
       <van-tab title="混凝土"></van-tab>
