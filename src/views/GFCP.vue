@@ -2,7 +2,7 @@
     <div class="price-calculator">
         <div class="container" style="margin-top: -20px;">
             <van-cell-group inset title="参考标准" style="margin-bottom: 3px;">
-                <van-field v-model="roofArea" label="屋顶面积（平方米）" label-width="12em" input-align="right"
+                <van-field v-model="roofArea" label="车棚面积（平方米）" label-width="12em" input-align="right"
                     style="padding: 3px;" readonly />
                 <van-field v-model="height" label="车位标准" label-width="12em" input-align="right" style="padding: 3px;"
                     readonly />
